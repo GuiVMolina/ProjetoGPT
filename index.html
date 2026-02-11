@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjetoGPT - Azure AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <main class="container">
+        <header class="header">
+            <div class="header-icon">
+                <i class="fa-brands fa-microsoft"></i>
+            </div>
+            <div class="header-text">
+                <h1>PROJETO GPT</h1>
+                <span class="status-badge">Online</span>
+            </div>
+        </header>
+
+        <div class="chat-box" id="chatBox">
+            <div class="message bot-message">
+                <div class="avatar"><i class="fa-solid fa-robot"></i></div>
+                <div class="bubble">
+                    <p>Olá! Bem-vindo ao assistente Azure AI.</p>
+                    <p>Como posso ajudar você hoje?</p>
+                </div>
+            </div>
+            
+            </div>
+
+        <form class="input-container" id="chatForm">
+            <input 
+                type="text" 
+                id="userInput" 
+                class="chat-input" 
+                placeholder="Digite sua mensagem..." 
+                autocomplete="off" 
+                required
+            />
+            <button type="submit" class="sendButton">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
+    </main>
+
+    <footer class="info">Powered by Azure OpenAI</footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
